@@ -9,15 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+        ZStack {
+            Color(.black)
+
+            VStack {
+                
+                Image(systemName: "applelogo")
+                    .foregroundColor(.blue)
+                    .font(.system(size: 110))
+                
+            } // fin vstack
+        } // fin zstack
+        .ignoresSafeArea()
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    } // fin body
+} // fin struct
 
 #Preview {
     ContentView()
